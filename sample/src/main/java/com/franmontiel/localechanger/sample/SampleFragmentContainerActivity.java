@@ -28,7 +28,10 @@ public class SampleFragmentContainerActivity extends AppCompatActivity {
 
     @Override
     protected void attachBaseContext(Context newBase) {
-        newBase = LocaleChanger.configureBaseContext(newBase);
+        if (LocaleChanger.isInitialized()) {
+            newBase = LocaleChanger.configureBaseContext(newBase);
+        }
+
         super.attachBaseContext(newBase);
     }
 
