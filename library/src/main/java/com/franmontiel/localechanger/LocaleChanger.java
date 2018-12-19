@@ -83,6 +83,17 @@ public class LocaleChanger {
     }
 
     /**
+     * Checks if LocaleChanger has been initialized.
+     * This method can be useful when LocaleChanger is used in a library, and there is no guarantee
+     * at Activity level that the implementing app has initialized LocaleChanger.
+     *
+     * @return true if initialize(...) has been called.
+     */
+    public static boolean isInitialized() {
+        return delegate != null;
+    }
+
+    /**
      * Clears any Locale set and resolve and load a new default one.
      * This method can be useful if the app implements new supported Locales and it is needed to reload the default one in case there is a best match.
      */
