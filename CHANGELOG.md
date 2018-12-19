@@ -2,6 +2,10 @@ Change Log
 ==========
 
 
+Version 1.0.0 *(2018-12-18)*
+----------------------------
+ * Add `isInitialized` method so that clients can determine if LocaleChanger has been initialized.
+
 Version 0.9.2 *(2018-01-26)*
 ----------------------------
  * Improved support for RTL locales on pre-Nougat.
