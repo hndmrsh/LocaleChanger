@@ -16,9 +16,12 @@ allprojects {
 Step 2. Add the dependency
 ```groovy
 dependencies {
-        compile 'com.github.franmontiel:LocaleChanger:0.9.2'
+        compile 'com.github.hndmrsh:LocaleChanger:2.0.0'
 }
 ```
+
+_Note: the latest version compatible with the non-AndroidX support libraries is 1.0.0_
+
 Usage
 -----
 ### Basic usage
